@@ -1,7 +1,6 @@
-// Force-directed graph
-
 import * as d3 from 'd3'
-import { data } from './miserables.js'
+
+const data = await d3.json('london.json');
 
 // Specify the dimensions of the chart.
 const width = 928;
@@ -95,5 +94,5 @@ function dragended(event) {
 // stop naturally, but it’s a good practice.)
 // invalidation.then(() => simulation.stop());
 
-// return svg.node();
+console.log(svg.node())
 
